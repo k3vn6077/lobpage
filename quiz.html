@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legion of Boom Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="players.html">Players</a>
+      <a href="stats.html">LOB Stats</a>
+      <a href="draft2025.html">2025 Draft Class</a>
+      <a href="news.html">News & Contact</a>
+    </div>
+
+    <h1>Test Your Legion of Boom Knowledge</h1>
+    <p>Answer all questions to see your score!</p>
+
+    <form
+      id="quizForm"
+      class="flex-container"
+      style="flex-direction: column; align-items: center"
+    >
+      <div class="quiz-card">
+        <h3>1. What statistics did the Legion of Boom place #1 in?</h3>
+        <label><input type="radio" name="q1" value="a" /> Points Allowed</label>
+        <label><input type="radio" name="q1" value="b" /> Yards Allowed</label>
+        <label><input type="radio" name="q1" value="c" /> Takeaways</label>
+        <label
+          ><input type="radio" name="q1" value="d" /> All of the Above</label
+        >
+      </div>
+
+      <div class="quiz-card">
+        <h3>2. Who did the Seahawks beat in Super Bowl XLVIII?</h3>
+        <label
+          ><input type="radio" name="q2" value="a" /> Kansas City Chiefs</label
+        >
+        <label><input type="radio" name="q2" value="b" /> Denver Broncos</label>
+        <label
+          ><input type="radio" name="q2" value="c" /> Philadelphia Eagles</label
+        >
+        <label
+          ><input type="radio" name="q2" value="d" /> San Francisco 49ers</label
+        >
+      </div>
+
+      <div class="quiz-card">
+        <h3>3. What are the official Seahawks team colors?</h3>
+        <label
+          ><input type="radio" name="q3" value="a" /> Red, Black, Silver</label
+        >
+        <label
+          ><input type="radio" name="q3" value="b" /> Purple, Gold, White</label
+        >
+        <label
+          ><input type="radio" name="q3" value="c" /> Navy, Green, Gray</label
+        >
+        <label
+          ><input type="radio" name="q3" value="d" /> Blue, Orange, White</label
+        >
+      </div>
+      <div class="quiz-card">
+        <h3>4. What position did Richard Sherman play?</h3>
+        <label><input type="radio" name="q4" value="a" /> Cornerback</label>
+        <label><input type="radio" name="q4" value="b" /> Defensive Line</label>
+        <label><input type="radio" name="q4" value="c" /> Safety</label>
+        <label><input type="radio" name="q4" value="d" /> Linebacker</label>
+      </div>
+
+      <div class="quiz-card">
+        <h3>5. Who was known for the biggest hits in the Legion of Boom?</h3>
+        <label
+          ><input type="radio" name="q5" value="a" /> Richard Sherman</label
+        >
+        <label><input type="radio" name="q5" value="b" /> Bobby Wagner</label>
+        <label><input type="radio" name="q5" value="c" /> Earl Thomas</label>
+        <label><input type="radio" name="q5" value="d" /> Cam Chancellor</label>
+      </div>
+
+      <button type="button">Submit Quiz</button>
+      <div id="quizResult" style="display: none; margin-top: 20px"></div>
+    </form>
+  </body>
+</html>
