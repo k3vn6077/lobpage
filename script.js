@@ -46,6 +46,26 @@ document.addEventListener("DOMContentLoaded", function () {
     if (result) {
       result.textContent = `You got ${score} out of 5 correct.`;
       result.style.display = "block";
+    
+      if (score === 5) {
+        const button = document.createElement("button");
+        button.textContent = "🏆 Special Reward!";
+        button.style.backgroundColor = "#FFD700";
+        button.style.color = "#002244";
+        button.style.padding = "10px 20px";
+        button.style.marginTop = "10px";
+        button.onclick = showImage;
+        result.appendChild(button);
+      }
     }
   }
-  
+
+  function showImage() {
+    const img = document.createElement("img");
+    img.src = "https://images.paramount.tech/uri/mgid:arc:imageassetref:shared.bet.us:20b76c41-f475-11eb-84ca-0e0dce71f2a5?quality=0.7&gen=ntrn";
+    img.style.position = "fixed";
+    img.style.bottom = "20px";
+    img.style.right = "20px";
+    img.style.width = "150px";
+    document.body.appendChild(img);
+  }
