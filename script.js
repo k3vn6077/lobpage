@@ -44,18 +44,20 @@ document.addEventListener("DOMContentLoaded", function () {
   
     const result = document.getElementById("quizResult");
     if (result) {
-      result.textContent = `You got ${score} out of 5 correct.`;
+      result.innerHTML = `You got ${score} out of 5 correct.`;
       result.style.display = "block";
-    
+      
       if (score === 5) {
         const button = document.createElement("button");
         button.textContent = "🏆 Special Reward!";
         button.style.backgroundColor = "#FFD700";
         button.style.color = "#002244";
         button.style.padding = "10px 20px";
-        button.style.marginTop = "10px";
+        button.style.marginBottom = "10px";
+        button.style.display = "block";
         button.onclick = showImage;
-        result.appendChild(button);
+
+        result.insertBefore(button, result.firstChild);
       }
     }
   }
